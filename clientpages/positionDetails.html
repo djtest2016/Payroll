@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>payroll</title>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div height="150px">
+            <div class="text-center">
+                <form role="form">
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>BusinessUnit code</label>
+                        <input type="text" class="form-control" id="BUCode" placeholder="Enter BUCode">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Job code</label>
+                        <input type="text" class="form-control" id="JobCode" placeholder="Enter JobCode">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Position ID</label>
+                        <input type="text" class="form-control" id="PID" placeholder="Enter Position ID">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Position Title</label>
+                        <input type="text" class="form-control" id="PTitle" placeholder="Enter Position Title">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Effective From</label>
+                        <input type="text" class="form-control" id="EffectiveFrom" placeholder="Enter Effective From">
+                    </div>
+                    <div class="form-group">
+                        <label hidden>Status</label>
+                        <select class="form-control" id="Status" style="width: 16em;">
+                            <option>--Select Status--</option>
+                            <option>Closed</option>
+                            <option>Frozen</option>
+                            <option>Open</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label hidden>Business Unit Name</label>
+                        <select class="form-control" id="BUName" style="width: 16em;">
+                            <option>--Select BUName--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label hidden>Job Title</label>
+                        <select class="form-control" id="JobTitle" style="width: 16em;">
+                            <option>--Select Job Title--</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-primary active">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
