@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <title>Payroll</title>
     <link rel="stylesheet" href="js/jquery-ui/css/cupertino/jquery-ui-1.10.4.custom.min.css">
-    <script src="js/jquery-ui/js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui/js/jquery-1.10.2.js"></script>e
     <script src="js/jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/indextemplate.css">
     <script src="css/bootstrap/js/bootstrap.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        function getpage(linkname){
+            $.ajaxPrefilter("json script", function (options) {
+                options.crossDomain = true;
+            });
+            $('#result').load(linkname);
+//            $("#change").click(function () {
+//                $('#result').load(url);
+                //alert("Thanks for visiting!");
+//            });
+
+        }
+    </script>
 
 </head>
 <body>
@@ -19,7 +36,7 @@
             <a class="blog-nav-item active" href="#">Home</a>
             <a class="blog-nav-item" href="#">About</a>
             <ul class="nav nav-pills navbar-right ">
-                <li><a class="blog-nav-item" href="#">Login</a></li>
+                <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
                 <li class="dropdown">
                     <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -36,7 +53,7 @@
 </div>
 
 
-<div class="container">
+<div class="container" id="result">
 
     <div class="blog-header">
         <h1 class="blog-title">Payroll.inc</h1>
