@@ -18,6 +18,7 @@
             $.ajaxPrefilter("json script", function (options) {
                 options.crossDomain = true;
             });
+
             $('#result').load(linkname);
 //            $("#change").click(function () {
 //                $('#result').load(url);
@@ -35,6 +36,7 @@
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="#">Home</a>
             <a class="blog-nav-item" href="#">About</a>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Payslip</a>
             <ul class="nav nav-pills navbar-right ">
                 <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
                 <li class="dropdown">
