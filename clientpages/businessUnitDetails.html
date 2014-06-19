@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>payroll</title>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker();
+        });
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div height="150px">
+            <div class="text-center">
+                <form role="form">
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>BusinessUnit code</label>
+                        <input type="text" class="form-control" id="BUCode" placeholder="Enter BUCode">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>BusinessUnit Parent</label>
+                        <input type="text" class="form-control" id="BUParent" placeholder="Enter BUParent">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>BusinessUnit Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Enter BU Name">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Effective From</label>
+                        <input type="text" id="datepicker">
+                        <input type="text" class="form-control" id="EffectiveFrom" placeholder="Enter Effective From">
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Effective To</label>
+                        <input type="text" class="form-control" id="EffectiveTo" placeholder="Enter Effective Upto">
+                    </div>
+                    <div class="form-group">
+                        <label hidden>Type</label>
+                        <select class="form-control" id="Status" style="width: 16em;">
+                            <option>--Select BU Type--</option>
+                            <option>Administration</option>
+                            <option>Finance</option>
+                            <option>Human Resources</option>
+                            <option>Payroll</option>
+                            <option>Technical</option>
+                            <option>Sales & Marketing</option>
+                            <option>Production</option>
+                            <option>Packaging</option>
+                            <option>Quality Assurance</option>
+                            <option>Ware Housing</option>
+                            <option>Transport</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-primary active">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
