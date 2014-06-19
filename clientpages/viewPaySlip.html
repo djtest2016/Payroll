@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PayRoll</title>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-4">
+        <div height="150px">
+            <div class="text-center">
+                <form role="form">
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Pay Frequency</label>
+                        <select class="form-control" id="PayFreq" style="width: 16em;">
+                            <option>--Select Pay Frequency--</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Tax Year</label>
+                        <select class="form-control" id="TaxYear" style="width: 16em;">
+                            <option>--Select Tax Year--</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="width: 16em;">
+                        <label hidden>Pay Period</label>
+                        <input type="text" class="form-control" id="PayPeriod" placeholder="Enter Pay Period">
+                    </div>
+                    <br>
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-primary active">  List  </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form role="form">
+            <div class="form-group">
+                <table class="table table-hover">
+                    <tr>
+                        <td></td>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Employee Salary</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type = "radio" name="EmpID" value="0001"></td>
+                        <td>0001</td>
+                        <td>Anusha</td>
+                        <td>40000</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type = "radio" name="EmpID" value="0002"></td>
+                        <td>0002</td>
+                        <td>Pratyusha</td>
+                        <td>50000</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary active">View</button>
+        </form>
+    </div>
+    <div
+</body>
+</html>
