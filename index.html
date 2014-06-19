@@ -15,7 +15,7 @@
 
 
 
-    <script type="text/javascript">
+    <script type="text/javascript">/* Script by vivek*/
         function getpage(linkname){
             $.ajaxPrefilter("json script", function (options) {
                 options.crossDomain = true;
@@ -29,6 +29,12 @@
 
         }
     </script>
+    <script> /*Script by Anusha */
+    // script of date picker
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+    </script>
 
 </head>
 <body>
@@ -41,6 +47,7 @@
             <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Payslip</a>
             <a class="blog-nav-item" href="#" onclick="getpage('clientpages/employeeDeductions.html')">DeductionsEmployee</a>
             <a class="blog-nav-item" href="#" onclick="getpage('clientpages/calculatePayrun.html')">Calculate Payrun</a>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/businessUnitDetails.html')">businessUnitDetails</a>
             <ul class="nav nav-pills navbar-right ">
                 <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
                 <li class="dropdown">
