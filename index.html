@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/indextemplate.css">
     <script src="css/bootstrap/js/bootstrap.js"></script>
 
+
+    <!-- custom additions of scripts and css-->
+
+
+
     <script type="text/javascript">
         function getpage(linkname){
             $.ajaxPrefilter("json script", function (options) {
@@ -34,6 +39,7 @@
             <a class="blog-nav-item active" href="#">Home</a>
             <a class="blog-nav-item" href="#">About</a>
             <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Payslip</a>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/employeeDeductions.html')">DeductionsEmployee</a>
             <ul class="nav nav-pills navbar-right ">
                 <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
                 <li class="dropdown">
