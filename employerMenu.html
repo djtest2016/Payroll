@@ -11,11 +11,9 @@
     <script src="css/bootstrap/js/bootstrap.js"></script>
 
 
-    <!-- custom additions of scripts and css-->
 
 
-
-    <script type="text/javascript">/* Script by vivek*/
+    <script type="text/javascript">
         function getpage(linkname){
             $.ajaxPrefilter("json script", function (options) {
                 options.crossDomain = true;
@@ -24,16 +22,10 @@
             $('#result').load(linkname);
 //            $("#change").click(function () {
 //                $('#result').load(url);
-                //alert("Thanks for visiting!");
+            //alert("Thanks for visiting!");
 //            });
 
         }
-    </script>
-    <script> /*Script by Anusha */
-    // script of date picker
-    $(function() {
-        $( "#datepicker" ).datepicker();
-    });
     </script>
 
 </head>
@@ -43,12 +35,17 @@
     <div class="container">
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="#">Home</a>
-            <a class="blog-nav-item" href="#">About</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Payslip</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/aa.html')">aa</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/calculatePayrun.html')">Calculate Payrun</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/businessUnitDetails.html')">businessUnitDetails</a>
-            <ul class="nav nav-pills navbar-right ">
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Manage Employee</a>
+
+            <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Employee EEinfo<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Add Earning</a></li>
+                    <li><a href="#">Delete Earning</a></li>
+                    <li><a href="#">Update Earning</a></li>
+                </ul>
+            </li>
+
+            <ul class="nav nav-pills navbar-right ">-->
                 <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
                 <li class="dropdown">
                     <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
