@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Payroll</title>
     <link rel="stylesheet" href="js/jquery-ui/css/cupertino/jquery-ui-1.10.4.custom.min.css">
-    <script src="js/jquery-ui/js/jquery-1.10.2.js"></script>e
+    <script src="js/jquery-ui/js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/indextemplate.css">
@@ -44,19 +44,38 @@
         <nav class="blog-nav">
             <a class="blog-nav-item active" href="#">Home</a>
             <a class="blog-nav-item" href="#">About</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/payslip.html')">Payslip</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/businessUnitDetails.html')">aa</a>
-            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/calculatePayrun.html')">Calculate Payrun</a>
-            <ul class="nav nav-pills navbar-right ">
-                <li><a class="blog-nav-item" onclick="getpage('login.html')">Login</a></li>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/ManageEmployee.html')">Manage Employee</a>
+            <ul class="blog-nav-item">
                 <li class="dropdown">
-                    <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Employee Earnings <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/addEE.html')">Add Earnings</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/updateEE.html')">Update Earnings</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/deleteEE.html')">Delete Earnings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/employeeDeductions.html')">Employee Deductions</a>
+            <ul class="blog-nav-item">
+                <li class="dropdown">
+                    <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Business Unit<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="getpage('clientpages/jobDetails.html')">JobDetails</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/positionDetails.html')">Position Details</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/businessUnitDetails.html')">Business Unit Details</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="blog-nav-item" href="#" onclick="getpage('clientpages/businessUnitDetails.html')"></a>
+            <ul class="nav nav-pills navbar-right ">
+                <li><a class="blog-nav-item" onclick="getpage('clientpages/login.html')">Login</a></li>
+                <li class="dropdown">
+                    <a href="#" class="blog-nav-item dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="getpage('clientpages/myprofile.html')">Profile</a></li>
+                        <li><a href="#" onclick="getpage('clientpages/payslip.html')">Generate Payslip</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="index.html">Sign Out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -69,7 +88,7 @@
 
     <div class="blog-header">
         <h1 class="blog-title">Payroll.inc</h1>
-        <p class="lead blog-description">The official Payrol automatation system.</p>
+        <p class="lead blog-description">The official Payroll Automation System.</p>
     </div>
 
 
